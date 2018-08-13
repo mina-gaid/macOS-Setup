@@ -27,11 +27,16 @@ casks=(
   mamp
   rstudio
   docker
-  webstorm
   pycharm
+  datagrip
   intelliJ
   webstorm
   phpstorm
+  filezilla
+  smallpdf
+  weka
+  teamviewer
+  db-browser-for-sqlite
 )
 
 brew=(
