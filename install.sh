@@ -9,10 +9,6 @@ fi
 echo "Updating homebrew..."
 brew update
 
-# Homebrew & Cask
-brew tap homebrew/science
-brew install brew-cask
-
 casks=(
   google-chrome
   firefox
@@ -29,7 +25,7 @@ casks=(
   docker
   pycharm
   datagrip
-  intelliJ
+  intellij-idea
   webstorm
   phpstorm
   filezilla
@@ -53,9 +49,8 @@ pip=(
 )
 
 npm=(
-  angular
-  @angular/cli
-  electron
+  @angular/cli@latest
+  electron-download
 )
 
 fonts=(
@@ -120,8 +115,7 @@ git config --global user.email mina.gaid@ibm.com
 
 # Cleanup
 echo "Cleaning up..."
-brew cleanup --force
-brew cask cleanup --force
+brew cleanup
 
 rm -f -r /Library/Caches/Homebrew/*
 
