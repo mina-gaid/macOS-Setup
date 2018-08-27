@@ -1,0 +1,3 @@
+EDITOR=atom
+
+echo "Done!"
