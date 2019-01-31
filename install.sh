@@ -46,6 +46,7 @@ brew=(
 pip=(
   django
   virtualenv
+  youtube-dl
 )
 
 npm=(
