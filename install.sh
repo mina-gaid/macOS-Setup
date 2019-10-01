@@ -10,43 +10,61 @@ echo "Updating homebrew..."
 brew update
 
 casks=(
+  brave-browser
   google-chrome
   firefox
   spotify
+  deezer
+  1password
   vlc
-  slack
-  github
-  anaconda
-  atom
-  sequel-pro
-  mysqlworkbench
-  mamp
-  rstudio
-  docker
-  pycharm
-  datagrip
-  intellij-idea
-  webstorm
-  phpstorm
-  filezilla
+  handbrake
+  sketchbook
   smallpdf
   weka
   teamviewer
+  discord
+  protonvpn
+  slack
+  zoomus
+  github
+  anaconda
+  sequel-pro
+  mysqlworkbench
   db-browser-for-sqlite
+  mamp
+  rstudio
+  atom
+  visual-studio-code
+  pycharm
+  datagrip
+  goland
+  resharper
+  intellij-idea
+  webstorm
+  phpstorm
+  visual-studio
+  docker
 )
 
 brew=(
   r
   mysql
+  postgresql
   node
   git
   heroku/brew/heroku
+  azure-cli
 )
 
 pip=(
   django
+  django-allauth
   virtualenv
   youtube-dl
+  gunicorn
+  psycopg2
+  whitenoise
+  Pillow
 )
 
 npm=(
@@ -56,6 +74,7 @@ npm=(
 
 fonts=(
     font-roboto
+    font-sanfrancisco
 )
 
 brew tap caskroom/cask
