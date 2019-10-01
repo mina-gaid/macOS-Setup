@@ -69,6 +69,8 @@ pip=(
 
 npm=(
   @angular/cli@latest
+  angular
+  nativescript
   electron-download
 )
 
