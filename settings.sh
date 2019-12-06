@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # See: github.com/mathiasbynens/dotfiles
 
+# Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
 #"Check for software updates daily, not just once per week"
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
