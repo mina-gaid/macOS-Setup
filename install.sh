@@ -27,7 +27,6 @@ casks=(
   slack
   zoomus
   github
-  anaconda
   sequel-pro
   mysqlworkbench
   db-browser-for-sqlite
@@ -47,6 +46,7 @@ casks=(
 )
 
 brew=(
+  python
   r
   mysql
   postgresql
