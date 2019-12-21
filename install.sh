@@ -14,7 +14,6 @@ casks=(
   google-chrome
   firefox
   spotify
-  deezer
   1password
   vlc
   handbrake
@@ -59,7 +58,7 @@ brew=(
 pip=(
   django
   django-allauth
-  virtualenv
+  pipenv
   youtube-dl
   gunicorn
   psycopg2
