@@ -12,6 +12,7 @@ brew update
 casks=(
   brave-browser
   google-chrome
+  microsoft-edge
   firefox
   spotify
   1password
@@ -42,6 +43,7 @@ casks=(
   phpstorm
   visual-studio
   docker
+  java
 )
 
 brew=(
