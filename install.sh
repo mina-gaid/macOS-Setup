@@ -71,6 +71,10 @@ npm=(
   electron
 )
 
+gem=(
+  sass
+)
+
 fonts=(
     font-roboto
     font-sanfrancisco
@@ -98,6 +102,13 @@ for i in "${pip[@]}"
 do
    :
    pip install $i
+done
+
+echo "Installing Ruby tools..."
+for i in "${gem[@]}"
+do
+   :
+   gem install $i
 done
 
 echo "Installing Node frameworks..."
