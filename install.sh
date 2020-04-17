@@ -20,19 +20,16 @@ casks=(
   handbrake
   sketchbook
   smallpdf
-  weka
   teamviewer
   discord
   protonvpn
   slack
-  zoomus
   github
   sequel-pro
   mysqlworkbench
   db-browser-for-sqlite
   mamp
   rstudio
-  atom
   visual-studio-code
   pycharm
   datagrip
@@ -44,6 +41,7 @@ casks=(
   visual-studio
   docker
   java
+  ibm-cloud-cli
 )
 
 brew=(
@@ -59,20 +57,18 @@ brew=(
 
 pip=(
   django
-  django-allauth
   pipenv
   youtube-dl
-  gunicorn
-  psycopg2
   whitenoise
   Pillow
+  optimize-images
 )
 
 npm=(
   @angular/cli@latest
   angular
   nativescript
-  electron-download
+  electron
 )
 
 fonts=(
@@ -119,11 +115,7 @@ do
    brew cask install $i
 done
 
-# CLI Tools
-echo "Installing IBM Cloud CLI..."
-curl -fsSL https://clis.ng.bluemix.net/install/osx | sh
-
-echo "Installing xcode-stuff..."
+echo "Installing XCode-stuff..."
 xcode-select --install
 
 # Git configuration
