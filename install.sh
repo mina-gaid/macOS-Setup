@@ -42,6 +42,7 @@ casks=(
   docker
   java
   ibm-cloud-cli
+  android-studio
 )
 
 brew=(
