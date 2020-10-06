@@ -69,6 +69,7 @@ npm=(
   angular
   nativescript
   electron
+  expo-cli
 )
 
 gem=(
