@@ -54,6 +54,7 @@ brew=(
   git
   heroku/brew/heroku
   azure-cli
+  yarn
 )
 
 pip=(
