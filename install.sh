@@ -34,7 +34,6 @@ casks=(
   pycharm
   datagrip
   goland
-  resharper
   intellij-idea
   webstorm
   phpstorm
@@ -78,10 +77,10 @@ gem=(
   sass
 )
 
-fonts=(
-    font-roboto
-    font-sanfrancisco
-)
+# fonts=(
+#     font-roboto
+#     font-sanfrancisco
+# )
 
 brew tap caskroom/cask
 brew tap caskroom/versions
@@ -121,13 +120,13 @@ do
    npm install -g $i
 done
 
-echo "Installing fonts..."
-brew tap caskroom/fonts
-for i in "${fonts[@]}"
-do
-   :
-   brew cask install $i
-done
+# echo "Installing fonts..."
+# brew tap caskroom/fonts
+# for i in "${fonts[@]}"
+# do
+#    :
+#    brew cask install $i
+# done
 
 echo "Installing XCode-stuff..."
 xcode-select --install
