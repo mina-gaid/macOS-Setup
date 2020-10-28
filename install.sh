@@ -9,6 +9,7 @@ fi
 echo "Updating homebrew..."
 brew update
 
+# Software list
 casks=(
   brave-browser
   google-chrome
@@ -44,6 +45,7 @@ casks=(
   android-studio
 )
 
+# Tools list
 brew=(
   python
   r
@@ -56,6 +58,7 @@ brew=(
   yarn
 )
 
+# Python packages list
 pip=(
   django
   pipenv
@@ -65,6 +68,7 @@ pip=(
   optimize-images
 )
 
+# Node packages list
 npm=(
   @angular/cli@latest
   angular
@@ -73,14 +77,19 @@ npm=(
   expo-cli
 )
 
+# Ruby packages list
 gem=(
   sass
 )
 
-# fonts=(
-#     font-roboto
-#     font-sanfrancisco
-# )
+# VS Code extension list
+vscode=(
+  ms-dotnettools.csharp
+  esbenp.prettier-vscode
+  ms-python.python
+  visualstudioexptteam.vscodeintellicode
+  msjsdiag.vscode-react-native
+)
 
 brew tap caskroom/cask
 brew tap caskroom/versions
@@ -120,20 +129,19 @@ do
    npm install -g $i
 done
 
-# echo "Installing fonts..."
-# brew tap caskroom/fonts
-# for i in "${fonts[@]}"
-# do
-#    :
-#    brew cask install $i
-# done
+echo "Installing VS Code extensions..."
+for i in "${vscode[@]}"
+do
+   :
+   code --install-extension $i
+done
 
 echo "Installing XCode-stuff..."
 xcode-select --install
 
 # Git configuration
 echo "Configuring Git..."
-cp .bash_profile ~/
+cp .zshenv ~/
 cp .vimrc ~/
 cp .gitignore_global ~/
 cp .gitconfig ~/
