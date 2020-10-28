@@ -41,8 +41,8 @@ casks=(
   visual-studio
   docker
   java
-  ibm-cloud-cli
   android-studio
+  ibm-cloud-cli
 )
 
 # Tools list
@@ -56,6 +56,7 @@ brew=(
   heroku/brew/heroku
   azure-cli
   yarn
+  cloudfoundry/tap/cf-cli@7
 )
 
 # Python packages list
