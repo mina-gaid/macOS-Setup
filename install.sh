@@ -60,10 +60,8 @@ brew=(
 
 # Python packages list
 pip=(
-  django
   pipenv
   youtube-dl
-  whitenoise
   Pillow
   optimize-images
 )
