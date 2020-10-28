@@ -112,7 +112,7 @@ echo "Installing Python packages & frameworks..."
 for i in "${pip[@]}"
 do
    :
-   pip install $i
+   pip3 install $i
 done
 
 echo "Installing Ruby tools..."
