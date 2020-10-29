@@ -13,6 +13,14 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 #"Show Finder path bar by default"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
+#"Show Battery percent"
+defaults write com.apple.menuextra.battery ShowPercent YES
+
+#"Show menu-bar icons for Bluetooth and Volume"
+defaults write com.apple.systemuiserver menuExtras -array \
+"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+"/System/Library/CoreServices/Menu Extras/Volume.menu"
+
 #"Enabling snap-to-grid for icons on the desktop and in other icon views"
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
