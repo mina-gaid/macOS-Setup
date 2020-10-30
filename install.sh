@@ -57,12 +57,12 @@ brew=(
   azure-cli
   yarn
   cloudfoundry/tap/cf-cli@7
+  youtube-dl
 )
 
 # Python packages list
 pip=(
   pipenv
-  youtube-dl
   Pillow
   optimize-images
 )
