@@ -58,6 +58,7 @@ brew=(
   yarn
   cloudfoundry/tap/cf-cli@7
   youtube-dl
+  watchman
 )
 
 # Python packages list
