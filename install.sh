@@ -40,7 +40,6 @@ casks=(
   phpstorm
   visual-studio
   docker
-  java
   android-studio
   ibm-cloud-cli
 )
