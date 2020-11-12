@@ -20,7 +20,6 @@ casks=(
   vlc
   handbrake
   sketchbook
-  smallpdf
   teamviewer
   discord
   protonvpn
