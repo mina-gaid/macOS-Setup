@@ -41,6 +41,7 @@ casks=(
   docker
   android-studio
   ibm-cloud-cli
+  background-music
 )
 
 # Tools list
