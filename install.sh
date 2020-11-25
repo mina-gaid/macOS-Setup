@@ -88,6 +88,7 @@ vscode=(
   ms-python.python
   visualstudioexptteam.vscodeintellicode
   msjsdiag.vscode-react-native
+  ms-vscode.vscode-typescript-next
 )
 
 brew tap caskroom/cask
