@@ -24,6 +24,7 @@ casks=(
   discord
   protonvpn
   slack
+  microsoft-teams
   github
   sequel-pro
   mysqlworkbench
