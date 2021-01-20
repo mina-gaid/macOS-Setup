@@ -75,6 +75,7 @@ npm=(
   nativescript
   electron
   expo-cli
+  n
 )
 
 # Ruby packages list
