@@ -93,13 +93,12 @@ vscode=(
 )
 
 brew tap homebrew/cask
-brew tap homebrew/versions
 
 echo "Installing apps..."
 for i in "${casks[@]}"
 do
    :
-   brew cask install --appdir="/Applications" $i
+   brew install --cask --appdir="/Applications" $i
 done
 
 echo "Installing Dev languages & packages..."
