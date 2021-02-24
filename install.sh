@@ -1,16 +1,12 @@
 # Check for Homebrew,
 # Install if we don't have it
-if test ! $(which brew); then
-    echo "Installing Hombrew"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if [[ $(command -v brew) == "" ]]; then
+  echo "Installing Hombrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
-    echo "Updating Homebrew"
-    brew update
+  echo "Updating Homebrew"
+  brew update
 fi
-
-# Update homebrew recipes
-echo "Updating homebrew..."
-brew update
 
 # Software list
 casks=(
@@ -96,8 +92,8 @@ vscode=(
   ms-vscode.vscode-typescript-next
 )
 
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask
+brew tap homebrew/versions
 
 echo "Installing apps..."
 for i in "${casks[@]}"
