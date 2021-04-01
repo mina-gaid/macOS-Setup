@@ -136,6 +136,10 @@ do
    code --install-extension $i
 done
 
+echo "Installing fonts..."
+brew tap homebrew/cask-fonts
+brew install font-ibm-plex --cask
+
 echo "Installing XCode-stuff..."
 xcode-select --install
 
