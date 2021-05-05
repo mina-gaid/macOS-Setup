@@ -58,6 +58,7 @@ brew=(
   cloudfoundry/tap/cf-cli@7
   youtube-dl
   watchman
+  openshift-cli
 )
 
 # Python packages list
