@@ -42,7 +42,7 @@ casks=(
   android-studio
   ibm-cloud-cli
   background-music
-  blackhole-16ch
+  kap
 )
 
 # Tools list
