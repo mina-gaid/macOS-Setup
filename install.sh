@@ -36,7 +36,6 @@ casks=(
   goland
   intellij-idea
   webstorm
-  phpstorm
   visual-studio
   docker
   android-studio
@@ -161,4 +160,4 @@ brew cleanup
 
 rm -f -r /Library/Caches/Homebrew/*
 
-echo "Done! Please Install other Apps, including IBM Apps manually"
+echo "Done! Please Install other Apps, including Workday Apps manually"
