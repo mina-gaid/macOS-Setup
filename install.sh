@@ -13,33 +13,24 @@ casks=(
   brave-browser
   google-chrome
   microsoft-edge
-  firefox
   spotify
-  1password
   vlc
-  handbrake
-  sketchbook
   teamviewer
   discord
   protonvpn
   slack
+  zoom
   microsoft-teams
   github
-  sequel-pro
-  mysqlworkbench
-  db-browser-for-sqlite
-  mamp
   rstudio
   visual-studio-code
   pycharm
   datagrip
-  goland
   intellij-idea
   webstorm
   visual-studio
   docker
   android-studio
-  ibm-cloud-cli
   background-music
   kap
 )
@@ -70,9 +61,6 @@ pip=(
 
 # Node packages list
 npm=(
-  @angular/cli@latest
-  angular
-  nativescript
   electron
   expo-cli
   n
@@ -139,7 +127,6 @@ done
 
 echo "Installing fonts..."
 brew tap homebrew/cask-fonts
-brew install font-ibm-plex --cask
 
 echo "Installing XCode-stuff..."
 xcode-select --install
@@ -152,7 +139,7 @@ cp .gitignore_global ~/
 cp .gitconfig ~/
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Mina Gaid"
-git config --global user.email mina.gaid@ibm.com
+git config --global user.email mina.gaid@workday.com
 
 # Cleanup
 echo "Cleaning up..."
