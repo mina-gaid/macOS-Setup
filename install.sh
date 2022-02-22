@@ -160,4 +160,4 @@ brew cleanup
 
 rm -f -r /Library/Caches/Homebrew/*
 
-echo "Done! Please Install other Apps, including Workday Apps manually"
+echo "Done! Please install other apps, including work related apps & tools manually"
