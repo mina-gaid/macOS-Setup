@@ -15,7 +15,6 @@ casks=(
   microsoft-edge
   spotify
   vlc
-  teamviewer
   discord
   protonvpn
   slack
@@ -30,6 +29,7 @@ casks=(
   webstorm
   visual-studio
   docker
+  postman
   android-studio
   background-music
   kap
@@ -39,7 +39,6 @@ casks=(
 brew=(
   python
   r
-  mysql
   postgresql
   node
   git
