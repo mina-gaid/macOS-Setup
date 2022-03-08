@@ -10,24 +10,20 @@ fi
 
 # Software list
 casks=(
-  brave-browser
-  google-chrome
   microsoft-edge
+  brave-browser
   spotify
   vlc
-  discord
   protonvpn
+  discord
   slack
   zoom
   microsoft-teams
   github
-  rstudio
+  visual-studio
   visual-studio-code
   pycharm
-  datagrip
   intellij-idea
-  webstorm
-  visual-studio
   docker
   postman
   android-studio
@@ -37,18 +33,17 @@ casks=(
 
 # Tools list
 brew=(
-  python
-  r
-  postgresql
-  node
   git
+  python
+  node
+  yarn
+  postgresql
   heroku/brew/heroku
   azure-cli
-  yarn
   cloudfoundry/tap/cf-cli@7
+  openshift-cli
   youtube-dl
   watchman
-  openshift-cli
 )
 
 # Python packages list
@@ -60,8 +55,10 @@ pip=(
 
 # Node packages list
 npm=(
-  electron
+  create-react-app
+  create-react-native-app
   expo-cli
+  electron
   n
 )
 
@@ -70,18 +67,21 @@ gem=(
   sass
 )
 
-# VS Code extension list
+# VS-Code extension list
 vscode=(
-  ms-dotnettools.csharp
-  esbenp.prettier-vscode
   ms-python.python
-  visualstudioexptteam.vscodeintellicode
   msjsdiag.vscode-react-native
   ms-vscode.vscode-typescript-next
+  ms-dotnettools.csharp
+  esbenp.prettier-vscode
+  visualstudioexptteam.vscodeintellicode
 )
 
-brew tap homebrew/cask
+# Initiate Homebrew casks
+brew tap 'homebrew/cask'
+brew tap 'homebrew/cask-fonts'
 
+# Installing Software list
 echo "Installing apps..."
 for i in "${casks[@]}"
 do
@@ -89,6 +89,7 @@ do
    brew install --cask --appdir="/Applications" $i
 done
 
+# Installing Tools list
 echo "Installing Dev languages & packages..."
 for i in "${brew[@]}"
 do
@@ -96,6 +97,7 @@ do
    brew install $i
 done
 
+# Installing Python packages list
 echo "Installing Python packages & frameworks..."
 for i in "${pip[@]}"
 do
@@ -103,6 +105,7 @@ do
    pip3 install $i
 done
 
+# Installing Ruby packages list
 echo "Installing Ruby tools..."
 for i in "${gem[@]}"
 do
@@ -110,6 +113,7 @@ do
    gem install $i
 done
 
+# Installing Node packages list
 echo "Installing Node frameworks..."
 for i in "${npm[@]}"
 do
@@ -117,6 +121,7 @@ do
    npm install -g $i
 done
 
+# Installing VS-Code extension list
 echo "Installing VS Code extensions..."
 for i in "${vscode[@]}"
 do
@@ -124,9 +129,11 @@ do
    code --install-extension $i
 done
 
+# Installing fonts
 echo "Installing fonts..."
-brew tap homebrew/cask-fonts
+brew install --cask font-roboto font-roboto-mono font-roboto-slab font-roboto-condensed
 
+# Setting-up XCode
 echo "Installing XCode-stuff..."
 xcode-select --install
 
@@ -138,12 +145,13 @@ cp .gitignore_global ~/
 cp .gitconfig ~/
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Mina Gaid"
-git config --global user.email mina.gaid@workday.com
+git config --global user.email "mina.gaid@workday.com"
+git config --global credential.helper osxkeychain
+git config --global pull.rebase false
 
 # Cleanup
 echo "Cleaning up..."
 brew cleanup
-
 rm -f -r /Library/Caches/Homebrew/*
 
 echo "Done! Please install other apps, including work related apps & tools manually"
