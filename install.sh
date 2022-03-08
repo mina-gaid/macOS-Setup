@@ -23,6 +23,7 @@ casks=(
   visual-studio
   visual-studio-code
   pycharm
+  webstorm
   intellij-idea
   docker
   postman
@@ -38,9 +39,10 @@ brew=(
   node
   yarn
   postgresql
-  heroku/brew/heroku
   azure-cli
+  awscli
   cloudfoundry/tap/cf-cli@7
+  heroku/brew/heroku
   openshift-cli
   youtube-dl
   watchman
