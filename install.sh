@@ -78,6 +78,16 @@ vscode=(
   visualstudioexptteam.vscodeintellicode
 )
 
+# Fonts list
+fonts=(
+  font-roboto
+  font-roboto-mono
+  font-sf-pro
+  font-sf-compact
+  font-sf-mono
+  font-new-york
+)
+
 # Initiate Homebrew casks
 brew tap 'homebrew/cask'
 brew tap 'homebrew/cask-fonts'
@@ -132,8 +142,11 @@ done
 
 # Installing fonts
 echo "Installing fonts..."
-brew install --cask font-roboto font-roboto-mono
-brew install --cask font-sf-pro font-sf-compact font-sf-mono font-new-york
+for i in "${fonts[@]}"
+do
+   :
+   brew install --cask $i
+done
 
 # Setting-up XCode
 echo "Installing XCode-stuff..."
