@@ -44,6 +44,7 @@ brew=(
   openshift-cli
   youtube-dl
   watchman
+  svn
 )
 
 # Python packages list
@@ -131,7 +132,7 @@ done
 
 # Installing fonts
 echo "Installing fonts..."
-brew install --cask font-roboto font-roboto-mono font-roboto-slab font-roboto-condensed
+brew install --cask font-roboto font-roboto-mono
 
 # Setting-up XCode
 echo "Installing XCode-stuff..."
