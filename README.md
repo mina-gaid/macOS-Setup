@@ -6,7 +6,7 @@ Bulk install apps, setup dev environments & configure preferred settings on a ne
 
 ----
 
-Note: This script may interfere with your existing environments, should one exist. Please evaluate the script before running.
+<b>Note:</b> This script may interfere with your existing environments, should one exist. Please evaluate the script before running.
 
 To run:
 
