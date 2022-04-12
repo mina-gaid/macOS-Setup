@@ -47,6 +47,7 @@ brew=(
   youtube-dl
   watchman
   svn
+  bleunlock
 )
 
 # Python packages list
