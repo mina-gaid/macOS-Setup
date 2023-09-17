@@ -13,17 +13,13 @@ casks=(
   microsoft-edge
   brave-browser
   spotify
-  vlc
   protonvpn
   discord
   slack
   zoom
   microsoft-teams
   github
-  visual-studio
   visual-studio-code
-  pycharm
-  webstorm
   intellij-idea
   docker
   postman
@@ -62,7 +58,6 @@ npm=(
   create-react-app
   create-react-native-app
   expo-cli
-  electron
   n
 )
 
